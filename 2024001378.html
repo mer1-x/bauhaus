@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bauhaus</title>
+</head>
+<style>
+    .box01{
+         width: 100%;
+         height: 100%;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-image: url(img/b1.png);
+        }
+         .box01 > img{display: block;
+                     height: auto;
+                     margin-left: 510px;
+                     padding-top: 400px;
+                     }
+
+    .box02{
+        position: relative;
+        width: 100%;
+        height: 1080px;
+        display: flex;
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+
+        .b1{
+        width: 655px;
+        height: 1080px;
+        background-color: #000ED1;
+        position: relative;
+        overflow: hidden;
+        }
+
+        .center-content{
+            position: absolute;
+        }
+        
+        .center-image{
+        max-width: 100%;
+        height: auto;
+        object-fit: cover; 
+        position: absolute;
+        top: 340px;
+        left: 81px;
+        }
+        
+        .center-text{
+            margin-top: 44px;
+            margin-left: 81px;
+            font-size: 70px;
+            color: white;
+            font-family: "source-han-serif-korean", serif;
+            font-size: 70px;
+            font-weight: 900;
+            letter-spacing: -5px;
+            line-height: 80px;
+        }
+
+        .outside-image{
+            height: auto;
+            position: absolute;
+            object-fit: cover;
+            left: 1150px;
+            top: 90px;
+        }
+
+        .outside-text{
+            font-weight: 700px;
+            line-height: 2.5;
+            letter-spacing: -1.2px;
+            position: absolute;
+            left: 696px;
+            top: 100px;
+            color: black;
+            font-family: "Nanum Gothic", sans-serif; 
+            font-size: 24px;
+        }
+
+    .box03{
+        width: 100%;
+        height: 1080px;
+        background-size: cover;
+        background-position: center;
+        background-color: white;
+        position: relative;
+    }
+
+    .b2{
+        width: 70px;
+        height: 400px;
+        background-color: #FFC500;
+        position: absolute;
+        top: 18.5%;
+        left: 200px;
+        transform: translateY(-50%) rotate(0deg); 
+        z-index: 2;
+    }
+    .b3{
+        width: 1050px;
+        height: 90px;
+        background-color: #D50000;
+        position: absolute;
+        top: 25%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    .b4{
+        width: 250px;
+        height: 250px;
+        background-color: #000ED1;
+        position: absolute;
+        top: 10%;
+        left: 1400px;
+        border-radius: 50%;}
+
+    .box03 > img{display: block;
+                max-width: 55%;
+                max-height: 300%;
+                height: auto;
+                margin-left: 655px;
+                }
+
+    .image-text{
+    position: absolute;
+    text-align: right;
+    top: 5px;
+    left: 1050px;
+    font-size: 70px;
+    color: white;
+    font-family: "source-han-serif-korean", serif;
+    z-index: 3;
+    font-weight: 900;
+    letter-spacing: -5px;
+    line-height: 80px;
+    }
+
+    .shape-text{
+        position: absolute;
+        top: 452px;
+        left: 100px;
+        font-size: 26px;
+        color: black;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 700px;
+        line-height: 2.5;
+        z-index: 1;
+    }
+    .shape-text-2{
+        position: absolute;
+        top: 452px;
+        left: 900px;
+        font-size: 26px;
+        color: black;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 700px;
+        line-height: 2.5;
+        z-index: 1;
+    }
+    .box04{
+    width: 100%;
+    height: 1080px;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    position: relative;
+    }
+    .b5{
+        width: 1520px;
+        height: 50px;
+        background-color:#000ED1;
+        position: absolute;
+        top: 65px;
+        left: 200px;
+        z-index: 2;
+    }
+    .b6{
+        width: 80px;
+        height: 1080px;
+        background-color: #FFC500;
+        position: absolute;
+        top: 0%;
+        left: 1450px;
+        z-index: 1;
+    }
+    .b7{
+        width: 250px;
+        height: 250px;
+        background-color: #D50000;
+        position: absolute;
+        top: 290px;
+        left: 83px;
+        border-radius: 50%;
+    }
+    .box04 > img{display: block;
+                position: relative;
+                max-width: 55%;
+                max-height: 300%;
+                height: auto;
+                margin-left: 185px;
+                top: 190px;
+                }
+    .shape-text-3{
+        width: 1325px;
+        height: 814px;
+        position: absolute;
+        text-align: center;
+        top: 150px;
+        left: 190px;
+        font-size: 26px;
+        color: black;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 700px;
+        line-height: 2.7;
+        letter-spacing: -1px;
+        z-index: 1;
+    }
+
+    .box05{
+        width: 100%;
+        height: 2160px;
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(img/b2.png);
+        }
+
+
+    .b8{
+        width: 300px;
+        height: 300px;
+        background-color: #FFC500;
+        position: absolute;
+        top: 250px;
+        left: 120px;
+        transform: translateY(-50%) rotate(0deg); 
+        z-index: 1;
+    }
+    .b9{
+        width: 50px;
+        height: 1620px;
+        background-color: #D50000;
+        position: absolute;
+        top: 810px;
+        left: 195px;
+        transform: translateY(-50%) rotate(0deg); 
+        z-index: 3;
+    }
+    .b10{
+        width: 1920px;
+        height: 30px;
+        background-color: #000ED1;
+        position: absolute;
+        top: 280px;
+        left: 0px;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    .b11{
+        width: 200px;
+        height: 200px;
+        background-color: #FFC500;
+        position: absolute;
+        top: 1050px;
+        left: 1350px;
+        transform: translateY(-50%);
+        border-radius: 100px;
+        z-index: 2;
+    }
+    .b12{
+        width: 20px;
+        height: 1251px;
+        background-color: black;
+        position: absolute;
+        top: 1535px;
+        left: 1480px;
+        transform: translateY(-50%);
+        z-index: 1;
+    }               
+    .box06{
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-image: url(img/b3.png);
+    }
+    .shape-text-4{
+        width: 795px;
+        height: 878px;
+        position: absolute;
+        top: 30px;
+        left: 125px;
+        font-size: 26px;
+        color: black;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 700px;
+        line-height: 2.6;
+        letter-spacing: -1px;
+        z-index: 1;
+    }
+    .shape-text-5{
+        width: 730px;
+        height: 386px;
+        position: absolute;
+        text-align: right;
+        top: 30px;
+        left: 830px;
+        font-size: 26px;
+        color: black;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 700px;
+        line-height: 2.6;
+        letter-spacing: -1px;
+        z-index: 1;
+    }
+
+    .box07{
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-image: url(img/b4.png);
+    }
+    .shape-text-6{
+        width: 1238px;
+        height: 819px;
+        position: absolute;
+        top: 75px;
+        left: 100px;
+        font-size: 24px;
+        color: black;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 700px;
+        line-height: 2.6;
+        letter-spacing: -1px;
+    }
+
+    .box08{
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(img/b5.png);
+    }
+    .shape-text-7{
+        width: 1408px;
+        height: 960px;
+        position: absolute;
+        top: 30px;
+        left: 160px;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 700px;
+        line-height: 2.6;
+        letter-spacing: -1px;
+    }
+    .shape-text-8{
+        width: 1408px;
+        height: 960px;
+        position: absolute;
+        top: 520px;
+        left: 160px;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 700px;
+        line-height: 2.6;
+        letter-spacing: -1px;
+    }
+    .box09{
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(img/b6.png);
+    }
+    .shape-text-9{
+        width: 1271px;
+        height: 101px;
+        position: absolute;
+        top: 0px;
+        left: 400px;
+        font-size: 70px;
+        text-align: center;
+        color: black;
+        font-family: "source-han-serif-korean", serif;
+        font-weight: 900;
+        letter-spacing: -5px;
+        line-height: 80px;
+    }
+    .shape-text-10{
+        width: 1500px;
+        height: 330px;
+        position: absolute;
+        top: 180px;
+        left: 210px;
+        font-size: 24px;
+        color: black;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 700px;
+        line-height: 2.3;
+        letter-spacing: -1px;
+        z-index: 3;
+    }
+    .shape-text-11{
+        width: 1500px;
+        height: 330px;
+        position: absolute;
+        top: 510px;
+        left: 210px;
+        font-size: 24px;
+        color: white;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 700px;
+        line-height: 2.3;
+        letter-spacing: -1px;
+        z-index: 2;
+    }
+    .box09 > img{display: block;
+                position: relative;
+                max-width: 55%;
+                max-height: 300%;
+                height: auto;
+                margin-left: 900px;
+                top: 300px;
+                z-index: 1;
+                }
+
+    .box10{
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(img/b7.png);
+    }
+    .shape-text-12{
+        width: 537px;
+        height: 86px;
+        position: absolute;
+        top: 400px;
+        left: 240px;
+        font-size: 60px;
+        text-align: center;
+        color: white;
+        font-family: "source-han-serif-korean", serif;
+        font-weight: 700;
+        letter-spacing: -5px;
+        line-height: 80px;
+    }
+    .shape-text-13{
+        width: 1244px;
+        height: 400px;
+        position: absolute;
+        top: 520px;
+        left: 260px;
+        font-size: 24px;
+        color: white;
+        font-family: "NanumBarunGothic", sans-serif;
+        font-weight: 500;
+        line-height: 2;
+        letter-spacing: -1px;
+        z-index: 3;
+    }
+    .t1box1{
+        width: 270px;
+        height: 101px;
+        position: absolute;
+        top: 110px;
+        left: 270px;
+    }
+    .t1box2{
+        width: 909px;
+        height: 132px;
+        position: absolute;
+        top: 230px;
+        left: 270px;
+    }
+    .headcopy{
+        color: white;
+        font-family: "Noto Serif KR", serif;
+        font-size: 70px;
+        font-weight: 900;
+        letter-spacing: -5px;
+        line-height: 62px;
+    }
+    .bodycopy{
+        color: white;
+        font-family: "Noto Serif KR", serif;
+        font-size: 100px;
+        font-weight: 900;
+        letter-spacing: -5px;
+        line-height: 25px;
+    }
+
+</style>
+<body>
+    <section>
+    <div>
+
+    </div>
+    <div class="box01">
+        <img src="img/img00.png" alt="바우하우스">
+        <div class="t1box1 headcopy"><b>김정운의</b>
+        </div>
+        <div class="t1box2 bodycopy"><b>바우하우스 이야기</b>
+        </div>
+    </div>
+        <div class="box02">
+            <div class="b1"></div>
+            
+            <div class="center-content">
+                <img src="img/bh1.png" alt="Center Image" class="center-image">
+                <div class="center-text">잡스,<br>
+                    바우하우스 훔쳐<br>
+                    소니 넘었다<br></div>
+            </div>
+            
+            <img src="img/img01.png" alt="Outside Image" class="outside-image">
+            <div class="outside-text">대학 입학 후 우연히 손에 넣게 된 소니 워크맨의<br>
+                그 깜찍함은 내게 충격이었다.<br>
+                레너드 코언이 노래하는 거친 저음의<br>
+                ‘소 롱 매리앤느(So Long, Marianne)’를 들었다.<br>
+                전율이었다. 그때나 지금이나<br>
+                나는 이미 했던 이야기 ‘하고, 또 하는’<br>
+                사내들의 술자리를 극도로 혐오한다.<br>
+                차라리 헤드폰을 끼고 음악을 듣는 편이 훨씬 행복하다.<br>
+                소니 워크맨의 충격 이후 생긴 습관이다.<br>
+                한동안 나는 소니의 전자제품을 사고 싶어 환장했다. 전자제품이 어떻게 이렇게 아름다울<br>
+                수 있을까 싶었다. 유학 시절에는 소니의 트리니트론(Trinitron) TV가 그렇게 갖고 싶었다.<br>
+                그러나 가격이 삼성·LG TV의 두 배였다. 3평 남짓한 기숙사에 사는 유학생이 소유하기엔<br>
+                너무 크고 사치스러운 물건이었다. 그렇게 아름다웠던 소니의 물건들이 어느 순간부터 황당<br>
+                하게 변했다. 오늘날의 소니는 그때 나를 그렇게 흥분시켰던 그 소니가 더 이상은 아니다.<br>
+                회생 불가능해 보인다.<br>
+            </div>
+        </div>
+    <div class="box03">
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <img src="img/img02.png" alt="소니의디자인">
+        <div class="image-text">그때,<br>
+            마음을 빼앗았던<br>
+            소니의 디자인<br></div>
+        <div class="shape-text">승부수는 먹혔다. 베가의 제품들은 단숨에 브라운을 따라잡았다.<br>
+            이때 베가의 디자인을 도맡았던 이가 젊고 야심찬 하르트무트<br>
+            에슬링거(Hartmut Esslinger·1944~)였다. 베가를 인수한 후<br>
+            베가의 디자인 명성까지도 갖고 싶어 했던 소니는 ‘소니-베가<br>
+            (Sony-Wega)’라는 브랜드를 새로 만들었다. 베가의 디자인을<br>
+            도맡았던 에슬링거와의 공동작업도 한동안 계속됐다(‘소니-베가’는<br>
+            2005년 ‘브라비아(Bravia)’라는 새로운 브랜드가 생길 때까지<br>
+            지속됐다). 유학시절 그렇게 갖고 싶었던 소니의 트리니트론 TV는<br>
+            바로 소니-베가의 에슬링거가 디자인한 제품이었다.
+        </div>
+        <div class="shape-text-2">
+            당시 소니는 어떻게 그토록 폼이 났을까.<br>
+            소니의 전성기는 1975년 독일의 전자회사 베가(Wega)를<br>
+            인수한 후부터다. 23년 설립된 베가는 역시 독일의 전자회사인<br>
+            브라운(Braun)과 앞서거니 뒤서거니 경쟁하며 둘 다 전자기기<br>
+            에 ‘디자인’이라는 새로운 개념을 연결시킨, 독일을 대표하는<br>
+            기업이었다. 당시 브라운에는 한스 구겔로트(Hans Gugelot<br>
+            1920~65)와 디터 람스(Dieter Rams·1932~)라는 전설적인<br>
+            디자이너가 있었다. 브라운에 뒤처져 있던 베가는 외부의<br>
+            디자인 회사에 제품 디자인을 맡겼다.
+        </div>
+    </div>
+    <div class="box04">
+        <div class="b5"></div>
+        <div class="b6"></div>
+        <div class="b7"></div>
+        <img src="img/apple.png" alt="apple">
+        <div class="shape-text-3">
+            소니의 전자제품에 대한 내 관심이 식어갈 무렵 새 전자제품이 나타나 다시 내 영혼을 빼앗았다.<br>
+            애플이다.<br>
+            나는 애플의 새 제품을 사고 싶어 안달했다. 애플 컴퓨터는 윈도 기반의 컴퓨터에 비해<br>
+            두 배 가까이 비쌌다. 그래도 나는 애플이 갖고 싶었다. 너무 예뻤기 때문이다.<br>
+            당시 나를 환장하게 했던 애플 컴퓨터의 디자인은 ‘백설공주(Snow White)’ 디자인이라 불렸다.<br>
+            이것이 소니 트리니트론을 디자인했던 하르트무트 에슬링거, 바로 그의 작품이었다는 것을<br>
+            한참 후에 알았다. 그는 82년부터 애플에 합류했다. 스티브 잡스도 한때 ‘소니 마니아’였다.<br>
+            잡스가 집의 차고를 나와 처음으로 얻은 사무실은 소니 매장과 같은 건물이었다.<br>
+            잡스는 수시로 소니 매장을 기웃거렸다.<br>
+            그때 자신에게 새로운 제품이 나올 때마다 브로슈어를 건네준 판매원을 잡스는 훗날 애플로 스카우트했다.<br>
+            바로 그 ‘소니 스타일’을 개발한 에슬링거가 이제 애플의 스티브 잡스와 손잡은 것이다. 그러나 새로 영입한<br>
+            에슬링거에게 잡스가 요구한 것은 정작 ‘소니 스타일’이 아니었다. ‘바우하우스 스타일’이었다.
+        </div>
+    </div>
+    <div class="box05">
+        <div class="b8"></div>
+        <div class="b9"></div>
+        <div class="b10"></div>
+        <div class="b11"></div>
+        <div class="b12"></div>
+    </div>
+    <div class="box06">
+        <div class="shape-text-4">
+            잡스는 83년 콜로라도 ‘애스펀(Aspen) 디자인 콘퍼런스’에서<br>
+            행한 강연에서 그때까지 자신이 그토록 좋아하던 소니를<br>
+            “검은색이고 우중충하다”며 아주 심하게 ‘디스’했다.<br>
+            그리고 제품의 기능에 충실한 바우하우스 스타일로 바꾸겠다고<br>
+            선언한다. “현재 산업디자인의 흐름은 소니의 하이테크 스타일<br>
+            입니다. 주로 암회색이고, 가끔 검은색을 사용해 이상한 짓을 하<br>
+            기도 하지요. 그렇게 하는 건 쉽습니다. 하지만 위대하진 않습니<br>
+            다… 우리가 하려는 것은 하이테크 제품을 만들어 깔끔한 패키<br>
+            지에 담아 소비자들이 패키지만 보고도 하이테크 제품인 줄 알<br>
+            게 하는 것입니다. 아름다운 백색 제품을 만들어 작고 깔끔한 패<br>
+            키지에 담을 것입니다. 브라운사의 전자기기에서 느낄 수 있는<br>
+            느낌을 제공하고자 하는 겁니다.” (월터 아이작슨, 안진환 역,<br>
+            『스티브 잡스』, 민음사, 2011년, 246~247쪽)
+        </div>
+        <div class="shape-text-5">
+            잡스가 바우하우스의 디자인을 접한 것은 ‘애스펀 디자인<br>
+            콘퍼런스’가 열렸던 바로 그곳이었다. 애스펀 리조트를<br>
+            총괄 디자인한 이는 헤르베르트 바이에르(Herbert<br>
+            Bayer·1900~1985)다. 그는 애스펀 리조트 전체 조형을<br>
+            위한 토목작업과 건물설계는 물론 식당·호텔방의<br>
+            구석구석, 작은 소품에 이르기까지 직접 관여했다.<br>
+            
+        </div>
+    </div>
+    <div class="box07">
+        <div class="shape-text-6">
+            바이에르는 독일 바우하우스 철학을 그 누구보다도 완성된 형태로 체험한 사람이었다.<br>
+            그는 바이마르의 바우하우스에서 21년부터 25년까지 학생으로 공부했다.<br>
+            바우하우스가 데사우로 이사한 후부터는 인쇄공방의 선생으로 일했다.<br>
+            오늘날 바우하우스식 타이포그래피로 여겨지는 소문자의 산세리프 글자체가<br>
+            바이에르의 작품이다. 그는 이 글자체를 ‘유니버설 타입’이라 불렀다.<br>
+            그는 오늘날 우리가 ‘그래픽 디자인’이라고 부르는 영역의 창시자로 여겨진다<br>
+            (잡스는 자신이 중퇴한 리드대학교에서 배운 것이라고는<br>
+            ‘타이포그래피’ 수업뿐이었다고 수시로 이야기했다. 그때 잡스가 인상적으로 느꼈던<br>
+            산세리프체를 대중화시킨 이가 바로 바이에르다).<br>
+            나치의 억압을 피해 38년 미국 뉴욕으로 이주한 바이에르는 45년 대규모 프로젝트를 제안받는다.<br>
+            바로 애스펀 리조트의 설계였다. 리조트가 건립되고 수십 년이 지난 후<br>
+            잡스는 이곳에서 바이에르가 디자인한 ‘바우하우스식 깔끔한 디자인’에 깊은 감명을 받은 것이다.<br>
+        </div>
+    </div>
+    <div class="box08">
+        <div class="shape-text-7">
+            사실 소니에 대한 잡스의 태도는 사뭇 모순적이다.<br>
+            83년의 ‘소니 디스’ 발언 이후에도 잡스는 애플의 디자이너들에게 수시로<br>
+            “만약 소니라면 어떻게 만들까?”라고 물었다.<br>
+            아이폰의 시제품을 만들 때에는 이름을 ‘소니 스타일’이라고 붙여가면서까지 소니를 흉내 내려 했다.<br>
+            ‘소니 디스 사건’이 20년도 더 지난 2006년의 일이다.<br>
+            잡스의 ‘재팬 스타일’에 대한 관심은 죽을 때까지 지속되었다.<br>
+            그의 트레이드마크인 ‘블랙 터틀넥’ 또한 일본 디자이너 이세이 미야케의 작품이다.<br>
+        </div>
+        <div class="shape-text-8">
+            아무튼 ‘소니에서 바우하우스로(from Sony to Bauhaus)’라는 잡스의 83년 선언은<br>
+            이제 막 애플에 합류한 에슬링거에게 큰 과제가 됐다. 잡스는 피카소가 남긴 “유능한 예술가는 모방하고,<br>
+            위대한 예술가는 훔친다(Good artists copy, great artists steal)”는 이야기를 수시로 했다.<br>
+            에슬링거는 잡스가 원했던 바로 그 ‘위대한 예술가’였다. 잘 ‘훔쳐왔다’는 이야기다.<br>
+            ‘소니 스타일’에서 벗어나 ‘바우하우스 스타일’로 옮겨가 달라는 잡스의 요청을 받은 에슬링거는<br>
+            독일 브라운사의 디터 람스에게서 ‘훔쳐왔다’.<br>
+        </div>
+    </div>
+    <div class="box09">
+        <div class="shape-text-9">
+            잡스 손잡은 에슬링거 ‘디터 람스’를 훔치다
+        </div>
+        <div class="shape-text-10">
+            훔쳐온 제품 디자인의 명칭도 하필 ‘백설공주’였다. 디터 람스가 디자인한 제품 중 가장 히트 친 복합음향기기SK<br>
+            시리즈의 별명이 바로 ‘백설공주의 관(棺)’이었기 때문이다. 턴테이블과 진공관 라디오를 일체형으로 개발한<br>
+            브라운의 SK 시리즈는 독일 특유의 둔탁한 느낌은 찾아볼 수 없는 전혀 다른 모습의 전자기기였다. 전체적으로<br>
+            하얗고, 아크릴로 된 뚜껑으로 내부가 들여다보이기에 이런 별명을 얻었다.<br>
+            거기에 스피커를 장식한 가늘고 긴 세로의 선들은 기계를 더욱 깔끔하고 날렵하게 보이게 해주었다.<br>
+            에슬링거의 애플 컴퓨터는 디터 람스의 이 같은 디자인적 특징을 그대로 훔쳐온 것이다.
+        </div>
+        <div class="shape-text-11">
+            디터 람스는 바우하우스의 전통을 다시 세우기 위해 전쟁 후 서독에 설립된<br>
+            ‘울름조형학교(Hochschule für Gestaltung Ulm)’와 아주 깊은 관련이 있다.<br>
+            에슬링거의 뒤를 이어 오늘날까지 애플의 디자인을 책임지고 있는<br>
+            조너선 아이브(Jonathan Ive) 또한 디터 람스의 디자인을 ‘훔쳐왔다’는 사실은<br>
+            널리 알려져 있다. 20세기 후반 가장 혁신적이라는 평가를 받는<br>
+            소니와 애플의 디자인은 이런 식으로 1919년 설립된 바우하우스에 뿌리를 내리고 있는 것이다.
+        </div>
+        <img src="img/img03.png" alt="라디오">
+    </div> 
+    <div class="box10">
+        <div class="shape-text-12">
+            김정운 문화심리학자
+        </div>
+        <div class="shape-text-13">
+            베를린자유대학교에서<br>
+            문화심리학으로 디플롬, 박사학위를 취득한 후<br>
+            베를린자유대 전임강사, 명지대 교수를 역임했다.<br>
+            2012년, 교수를 사임하고일본 교토 사가예술대에서 일본화를 전공했다.<br>
+            2016년 귀국 후, 여수에 살며 그림 그리고,<br>
+            글 쓰고, 작은 배를 타고나가 눈먼 고기도 잡는다.<br>
+            저서로『에디톨로지』『가끔은 격하게 외로워야 한다』『남자의 물건』등이 있다.
+        </div>
+    </div>        
+    </section>
+</body>
+</html>
